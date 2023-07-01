@@ -1,0 +1,252 @@
+.logo {
+    width: 100px;
+    
+  }
+  
+  .nav-bar-items a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  nav{
+    background: linear-gradient(0deg, #032339 30%, #063954 50%, #063d61 65%);
+  }
+.container .nav-bar-items {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 10% 70% 15% 5%;
+    grid-template-areas: 
+    "nav"
+    "body"
+    "section"
+    "footer";
+}
+nav{
+    background-color: rgb(78, 132, 76);
+    grid-area: nav;
+    margin-bottom: 10px;
+}
+#body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1QuhcnZ6Wbw-Q_1a6PxpKJAxYAR_K3hlz');
+    background-size: 100% 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 100%; /* Set the height to 100% */
+}
+
+#section{
+    background-color: #054a75;
+    grid-area: section;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #00223b;
+    grid-area: footer;
+}
+
+
+#section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(20deg, #032339 30%, #063954 50%, #063d61 65%);
+  }
+
+  
+
+  .circle-box h2 {
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: url('img/ezgif-4-0d9f6024b6.gif');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: waterEffect 10s infinite;
+  }
+  
+  
+  .circle-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: -10px 0vh 10px 10px rgba(9, 68, 104, 1);
+  }
+  
+  .data-science {
+    animation: colorChangeDataScience 10s infinite;
+  }
+  
+  .web-development {
+    animation: colorChangeWebDevelopment 10s infinite;
+  }
+  
+  .exercise {
+    animation: colorChangeExercise 10s infinite;
+  }
+  
+  .blogs {
+    animation: colorChangeBlogs 10s infinite;
+  }
+  
+  @keyframes colorChangeDataScience {
+    35% {
+      background-color: #100f27;
+    }
+    35% {
+      background-color: #02040f;
+    }
+    35% {
+      background-color: #090c0f;
+    }
+
+    0% {
+    transform: scale(0.5) translate( -0%, 60%);
+    }
+    50% {
+    transform: scale(0.8) translate( 0%, -50%);
+    }
+    100% {
+    transform: scale(1.3) ;
+    }
+
+  }
+  
+  @keyframes colorChangeWebDevelopment {
+    35% {
+      background-color: #100f27;
+    }
+    35% {
+      background-color: #02040f;
+    }
+    35% {
+      ackground-color: #090c0f;
+    }
+
+
+    0% {
+      transform: scale(0.5) ;
+    }
+    50% {
+    transform: scale(0.8) translate( 0%, -50%);
+    }
+    100% {
+    transform: scale(1.3) ;
+    }
+}
+
+  @keyframes colorChangeExercise {
+    35% {
+      background-color: #100f27;
+    }
+    35% {
+      background-color: #02040f;
+    }
+    35% {
+    background-color: #090c0f;
+    }
+    0% {
+        transform: scale(0.5) translate( -0%, 60%);
+    }
+    50% {
+    transform: scale(0.8) translate( 0%, -50%);
+    }
+    100% {
+    transform: scale(1.3) ;
+    }
+}
+  
+  @keyframes colorChangeBlogs {
+    35% {
+        background-color: #100f27;
+    }
+    35% {
+        background-color: #02040f;
+    }
+    35% {
+        background-color: #101921;
+    }
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+    transform: scale(0.8) translate( 0%, -50%);
+    }
+    100% {
+    transform: scale(1.3);
+    }
+  }
+
+
+/* sparks ------------------------------- */
+
+.circle-box.spark-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .circle-box.spark-effect::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 400px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 10%, rgb(202, 227, 238) 40%, rgba(0, 0, 0, 0) 50%);
+    pointer-events: none;
+    animation: sparkAnimation 10s infinite;
+  }
+
+  @keyframes sparkAnimation  { 
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    25% {
+      transform: scale(0.3);
+      opacity: 0.3;
+    }
+    50% {
+        transform: scale(0.6);
+        opacity: 0.6;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 2;
+    }
+  }
+
+  /* sparks ------------------------------- */
+
+  
+/* Styles for tablet screens */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* CSS code for tablet screens */
+
+  #body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1QuhcnZ6Wbw-Q_1a6PxpKJAxYAR_K3hlz');
+    background-size: 100% 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 100%; /* Set the height to 100% */
+}
+  
+}
+  
+  
